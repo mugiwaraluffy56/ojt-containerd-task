@@ -2,7 +2,7 @@
 
 #### [screenshots](commands.md#image-error)
 
-- i changed the application image from task-ojt:v1 to task-ojt:v999, and the new kubernetes pod failed to start and entered the `ImagePullBackOff` state.
+- i changed the application image from `task-ojt:v1` to `task-ojt:v999`, and the new kubernetes pod failed to start and entered the `ImagePullBackOff` state.
 
 - used `kubectl get pods` to identify the failing pod and `kubectl describe pod` to inspect its events. the evidence indicated that kubernetes could not retrieve the specified image.
 
