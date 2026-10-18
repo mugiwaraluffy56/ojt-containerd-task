@@ -22,3 +22,18 @@ $ kubectl get svc
 $ kubectl get deployments 
 ```
 ![alt text](screenshots/image-4.png)
+
+```bash
+$ kubectl get nodes -o wide
+```
+![alt text](screenshots/image-7.png)
+
+```bash
+$ crictl images
+```
+![alt text](screenshots/image-5.png)
+
+```bash
+$ crictl ps
+```
+![alt text](screenshots/image-6.png)
