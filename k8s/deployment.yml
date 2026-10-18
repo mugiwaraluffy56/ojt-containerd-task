@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: task-ojt
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: task-ojt
+  template:
+    metadata:
+      labels:
+        app: task-ojt
+    spec:
+      containers:
+      - name: task-ojt 
+        image: task-ojt:v1
+        imagePullPolicy: IfNotPresent
+        ports:
+          - containerPort: 1234
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 1234
+          initialDelaySeconds: 5
+          periodSeconds: 10
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 1234
+          initialDelaySeconds: 10
+          periodSeconds: 10
