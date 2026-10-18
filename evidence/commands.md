@@ -1,3 +1,5 @@
+## docker image verification
+
 ```bash
 $ docker images
 ```
@@ -7,6 +9,8 @@ $ docker images
 $ docker ps
 ```
 ![alt text](screenshots/image-0.png)
+
+## kubernetes image verification
 
 ```bash
 $ kubectl get pods 
@@ -28,6 +32,8 @@ $ kubectl get nodes -o wide
 ```
 ![alt text](screenshots/image-7.png)
 
+## crictl tool exploration
+
 ```bash
 $ crictl images
 ```
@@ -37,3 +43,25 @@ $ crictl images
 $ crictl ps
 ```
 ![alt text](screenshots/image-6.png)
+
+
+## image error
+
+```bash
+$ kubectl get pods
+```
+![alt text](screenshots/image-9.png)
+
+```bash
+$ kubectl describe pod task-ojt-7f7cfcdd68-75k5t
+```
+![alt text](screenshots/image-8.png)
+
+```bash
+$ kubectl rollout status deployment/task-ojt
+$ kubectl get pods
+$ kubectl get deployments
+```
+![alt text](screenshots/image-10.png)
+
+## application health
