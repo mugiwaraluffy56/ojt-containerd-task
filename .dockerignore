@@ -1,0 +1,23 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Git
+.git/
+.gitignore
+
+# Environment variables
+.env
+.env.*
+
+# IDE
+.idea/
+.DS_Store
+
+# Docs
+README.md
+evidence/
