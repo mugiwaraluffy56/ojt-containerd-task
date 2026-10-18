@@ -65,3 +65,25 @@ $ kubectl get deployments
 ![alt text](screenshots/image-10.png)
 
 ## application health
+
+```bash
+$ kubectl get pods
+```
+![alt text](screenshots/image-11.png)
+
+```bash
+$ kubectl describe pod task-ojt-7f84f5fd5d-mvbjd
+```
+![alt text](screenshots/image-12.png)
+
+```bash
+$ kubectl get deployments
+```
+![alt text](screenshots/image-13.png)
+
+## service connectivity
+
+```bash
+$ kubectl describe svc task-ojt
+```
+![alt text](screenshots/image-14.png)

@@ -8,5 +8,5 @@ spec:
     app: task-ojt
   ports:
     - port: 1234
-      targetPort: 1234
+      targetPort: 9999
       protocol: TCP
